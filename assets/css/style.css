@@ -41,18 +41,18 @@ header a {
 }
 main{
     display:block;
-    /* border: 2px solid yellow; */
+    border: 2px solid yellow;
 }
 .card{
     display: flex;
     color: white;
-    /* border: 2px solid orange; */
+    border: 2px solid orange;
     margin: 10px;
 }
 
 .cardName{
     display: flex;
-    /* border: 2px solid blueviolet; */
+    border: 2px solid blueviolet;
     width: 15%;
     justify-content: center;
     flex: 0 0 200px;
@@ -64,7 +64,16 @@ main{
     border-radius: 15px;
     padding: 10px;
     width: 100%;
+}
 
-
-
+.aboutMeText{
+    display: block;
+    border: 2px solid blue;
+}
+.aboutMe{
+    display: flex;
+    border: 2px solid rgb(0, 255, 157);
+    background-color: red;
+    border-radius: 15px;
+    padding: 10px;
 }
