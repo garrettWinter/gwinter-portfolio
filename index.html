@@ -8,27 +8,27 @@
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
-<body> 
-    <header>
-        <p>Garrett Winter's Full Stack Portfoilo</p>
+<body id="top"> 
+    <header >
+        <h1>Garrett Winter's Full Stack Portfoilo</h1>
         <nav>
             <ul>
-                <li> <a href="#">About Me</a> </li>
-                <li> <a href="#">Projects</a> </li>
-                <li> <a href="#">Contact Me</a> </li>
-                <li> <a href="#">Resume</a> </li>
-                <li> <a href="#">Top</a> </li>
+                <li> <a href="#aboutMe">About Me</a> </li>
+                <li> <a href="#projects">Projects</a> </li>
+                <li> <a href="#contactMe">Contact Me</a> </li>
+                <li> <a href="#">Resume</a> </li> <!--NEED TO LINK THIS STILL-->
+                <li> <a href="#top">Top</a> </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="card">
+        <section class="card" id="aboutMe">
             <div class="cardName">
-                About Me
+                <h2>About Me</h2>
             </div>
             <div class="aboutMe">
                 <div class="cardBody">
-                    <img src="./assets/images/200x200.png" alt="PLACEHOLDER" title="placeholder">
+                    <img src="./assets/images/Garrett200x200.jpg" alt="Picture of the author of this webpage, Garrett Winter" title="Garrett Winter">
                 </div>
                 <div class="aboutMeText">
                     Ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin 
@@ -39,27 +39,27 @@
                 </div>
             </div>
         </section>
-        <section class="card">
+        <section class="card" id="projects">
             <div class="cardName">
-                Project
+                <h2>Projects</h2>
             </div>
             <div class="cardBody">
                 <div class = "projectOuterBox">
                     <div class="heroProject"> 
-                        heroProject Banner
+                        Hero Project Week 1 Challenge
                     </div>
                     <div class="projects"> 
-                        <div class="projectBanner">Project 1</div>
-                        <div class="projectBanner">Project 2</div>
-                        <div class="projectBanner">Project 3</div>
-                        <div class="projectBanner">Project 4</div>
+                        <div class="projectBanner">Week 1 Mini-Project</div>
+                        <div class="projectBanner">Week 2 Mini-Project</div>
+                        <div class="projectBanner"><img src= "./assets/images/Coming-Soon300x150.jpg" title="A new project Coming Soon!" alt="A new project will be coming  Coming Soon!"></div>
+                        <div class="projectBanner"><img src= "./assets/images/Coming-Soon300x150.jpg" title="A new project Coming Soon!" alt="A new project will be coming  Coming Soon!"></div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="card">
+        <section class="card" id="contactMe">
             <div class="cardName">
-                Contact Me
+                <h2>Contact Me</h2>
             </div>
             <div class="cardBody">
                 to be developed
@@ -67,6 +67,7 @@
         </section>
     </main>
     <footer>
+        <h3>Garrett Winter © Copyright 2022, with no rights reserved</h3>
     </footer>
 </body>
 </html>
