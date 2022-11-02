@@ -1,0 +1,44 @@
+*{
+    background-color: transparent;
+}
+body{
+    background-color: black;
+}
+header {
+    background-color: red;
+    margin: 0px 10px 15px 10px;
+    font-size: 17 px;
+    color: white;
+    padding: 5px 0 10px 20px;
+    align-content: flex-start; /* Check to see if this does anything later */
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    font-family: serif;
+}
+
+header p {
+    width: 200px;
+    margin-top: 3px;
+}
+header nav {
+    display:inline;
+}
+header nav li{
+    border-color: white;
+    display: inline;
+    margin: 14px;
+}
+section {
+    width: 300px;
+}
+
+header ul {
+    display: flex;
+    flex: 1 0 300px ;
+    justify-content: right;
+    align-content: flex-end;
+    margin-top: -27px;
+}
+header a {
+    color: white;
+}
