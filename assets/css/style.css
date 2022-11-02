@@ -60,6 +60,7 @@ main{
 }
 
 .cardBody{
+    display: flex;
     background-color: red;
     border-radius: 15px;
     padding: 10px;
@@ -67,8 +68,8 @@ main{
 }
 
 .aboutMeText{
-    display: block;
     border: 2px solid blue;
+    padding: 25px 0px 0px 0px;
 }
 .aboutMe{
     display: flex;
@@ -76,4 +77,30 @@ main{
     background-color: red;
     border-radius: 15px;
     padding: 10px;
+}
+.projectOuterBox{
+    display: block;
+    border: 2px solid blueviolet; 
+    margin-top: 1px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 100%;
+}
+.heroProject{
+    border: 2px solid cyan;
+    width: 100%;
+    height: 200px
+}
+.projects{
+    display:flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.projectBanner{
+    border: 2px solid white;
+    width: 48%;
+    height: 100px;
+    margin-top: 10px;
 }
