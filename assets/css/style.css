@@ -17,7 +17,7 @@ header {
     border-bottom-right-radius: 30%;
 }
 
-header h1 {
+nav h1 {
     margin-top: 3px;
 }
 header nav {
@@ -29,14 +29,14 @@ header nav li{
     margin: 14px;
 }
 
-header ul {
+nav ul {
     display: flex;
     flex: 1 0 300px ;
     justify-content: right;
     align-content: flex-end;
     margin-top: -30px;
 }
-header a {
+nav a {
     color: white;
 }
 main{
@@ -73,6 +73,7 @@ section h2{
 
 .cardBody img{
     display: block;
+    padding-right: 25px;
 }
 .aboutMeText{
     border: 2px solid blue;
@@ -92,17 +93,33 @@ section h2{
     margin-left: 40px;
     margin-right: 40px;
     width: 100%;
+    
+}
+.projectBanner a img{
+    padding: 10px
+}
+
+.projectBanner img{
+    padding: 10px
 }
 .heroProject{
-    border: 2px solid cyan;
-    width: 100%;
-    height: 200px;
+    /* border: 2px solid cyan; */
+    /* width: 100%;
+    height: 200px; */
+    
 }
 img.heroBanner{
     visibility: visible;
     max-width: 100%;
     max-height: 100%;
     padding: 0px 8%;
+    
+ }
+ .projectBannerText{
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 3px;
+
  }
 .projects{
     display:flex;
@@ -110,14 +127,22 @@ img.heroBanner{
     border: 2px solid black;
     justify-content: space-between;
     margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.projectInnerBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .projectBanner{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     width: 40%;
     height: 150px;
     margin-top: 10px;
     margin-bottom: 2px;
     flex: 0 0 300px;
+    padding-bottom: 100px;
 }
 
 .contactMeOuterBox{
