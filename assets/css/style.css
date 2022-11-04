@@ -1,6 +1,6 @@
 :root {
-    --bodyBackground: black;
-    --mainBackground: red;
+    --bodyBackground: black; /*This defines a color variable for black for easy change.*/
+    --mainBackground: rgb(221, 2, 2);
   }
 
 *{
@@ -11,16 +11,26 @@
 
 body{
     background-color: var(--bodyBackground);
+    margin-bottom: 0px;
+    bottom: 0px;
 }
 
 header {
+    position: fixed;
+    top: 0px;
     background-color: var(--mainBackground);
-    margin: 0px 10px 15px 10px;
+    margin-bottom: 15px;
     font-size: 17px;
     color: white;
     padding: 5px 0 10px 20px;
     border-bottom-left-radius: 30%;
     border-bottom-right-radius: 30%;
+    border-bottom-color: rgb(0, 0, 0);
+    border-left-color: var(--mainBackground);
+    border-right-color: var(--mainBackground);
+    border-top-color: var(--mainBackground);
+    border-bottom-width: 1px;
+    border-style: solid;
     width: 100%;
 }
 
@@ -31,13 +41,13 @@ nav h1 {
 
 header nav {
     display:inline;
-    width: 100%;
+    max-width: 50%;
 }
 
 header nav li{
     display: inline;
     margin: 14px;
-    width: 100%;
+    max-width: 50%;
 }
 
 nav ul {
@@ -45,7 +55,7 @@ nav ul {
     flex: 1 0 300px ;
     justify-content: right;
     align-content: flex-end;
-    width: 100%;
+    max-width: 94%;
 }
 
 nav a {
@@ -55,7 +65,8 @@ nav a {
 
 main{
     display:block;
-    width: 100%
+    width: 100%;
+    margin-top: 125px;
 }
 
 section h2{
@@ -82,6 +93,7 @@ section h2{
     border-radius: 15px;
     padding: 10px;
     width: 100%;
+    margin-top: 25px;
 }
 
 .cardBody img{
@@ -188,15 +200,21 @@ img.heroBanner{
     display: block;
 }
 
-footer h3{
+footer{
     background-color: var(--mainBackground);
-    margin: 0px 10px 15px 10px;
-    font-size: 13px;
-    color: white;
-    padding: 5px 0 10px 20px;
     border-top-left-radius: 30%;
     border-top-right-radius: 30%;
+    line-height: 200%;
+    bottom: 0px;
+    height: 75px;
+    margin-top: 50px;
+}
+
+footer h3{
+    font-size: 13px;
+    color: white;
     text-align: center;
+    padding-top: 10px;
 }
 
 @media screen and (max-width: 1967px) {
@@ -237,7 +255,23 @@ footer h3{
     }
     .contactMeOuterBox{
             flex-direction: column;
-        }    
+    }
+    .contactMeHeader{
+        align-items: baseline;
+        display: inherit;
+        margin-right: 15px;
+    }
+    .contactMeOuterBox {
+        display: flex;
+        margin-top: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 100%;
+        }
+    .contactMeCard p a{
+        margin-left: 15px;
+        width: 150px;
+    }
 }
   
   /* Large smartphones - navbar changes color */
@@ -250,32 +284,37 @@ footer h3{
         display: inherit;
         margin-right: 15px;
     }
-    .contactMeCard p a{
-        margin-left: 15px;
-        width: 150px;
-    }
     nav ul {
         margin-top: 0px;
   }
-}
-
+  }
   /* Small smartphones - image placeholders change color */
   @media screen and (max-width: 576px) {
-    .cardName {
+main{
+        margin-top: 125px;
+    }
+.cardName {
         flex: 0 0 0px;
 }
-.cardBody {
-    padding: 0px;
+h2{
+    text-align: center;
 }
+.cardBody {
+    padding: 3px;
+    justify-items: center;
+}
+
 .projects {
     padding: 0px;
 }
+
 .projectBanner a img {
     padding: 0px;
 }
 .projectOuterBox {
-    margin-left: 10px;
-    margin-right: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
 
   }
+
 }
