@@ -1,14 +1,16 @@
+/*Defining some variables to allow to easy access during the development process along with simplifing maintince*/
 :root {
-    --bodyBackground: black; /*This defines a color variable for black for easy change.*/
+    --bodyBackground: black; 
     --mainBackground: rgb(221, 2, 2);
-  }
+ }
 
+ /*Defining some formatting to be applied to all objects.*/
 *{
-    background-color: transparent;
+    background-color: transparent; 
     color: white;
     font-family: serif;
 }
-
+ /*Elements and Classes have been orgianized as they appear in the HTML.*/
 body{
     background-color: var(--bodyBackground);
     margin-bottom: 0px;
@@ -25,7 +27,7 @@ header {
     padding: 5px 0 10px 20px;
     border-bottom-left-radius: 30%;
     border-bottom-right-radius: 30%;
-    border-bottom-color: rgb(0, 0, 0);
+    border-bottom-color: var(--bodyBackground);
     border-left-color: var(--mainBackground);
     border-right-color: var(--mainBackground);
     border-top-color: var(--mainBackground);
@@ -118,8 +120,7 @@ section h2{
     margin-top: 1px;
     margin-left: 40px;
     margin-right: 40px;
-    width: 100%;
-    
+    width: 100%;   
 }
 
 .projectBanner a img{
@@ -135,14 +136,12 @@ img.heroBanner{
     max-width: 100%;
     max-height: 100%;
     padding: 0px 0%;
-    
  }
 
  .projectBannerText{
     text-align: center;
     margin-top: 12px;
     margin-bottom: 3px;
-
  }
 
 .projects{
@@ -217,36 +216,38 @@ footer h3{
     padding-top: 10px;
 }
 
+/*Start of Media Queries to keep the formating responsive to the users viewport*/
+
 @media screen and (max-width: 1967px) {
     .card{
         margin: 10px 20%;
     }
-  }
-  
-  
+}
+
 @media screen and (max-width: 1640px) {
     .card{
         margin: 10px 15%;
     }
-  }
+}
 
-  @media screen and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
     .card{
         margin: 10px 10%;
     }
-  }
+}
 
-  @media screen and (max-width: 1220px) {
+@media screen and (max-width: 1220px) {
     .card{
         margin: 10px 3%;
     }
-  }
-  @media screen and (max-width: 1060px) {
+}
+
+@media screen and (max-width: 1060px) {
     .card{
         margin: 10px 0%;
     }
+}
 
-  }
 @media screen and (max-width: 992px) {
     .projectInnerBox {
         display: flex;
@@ -254,7 +255,7 @@ footer h3{
         justify-content: center;
     }
     .contactMeOuterBox{
-            flex-direction: column;
+        flex-direction: column;
     }
     .contactMeHeader{
         align-items: baseline;
@@ -267,16 +268,16 @@ footer h3{
         margin-left: 5px;
         margin-right: 5px;
         width: 100%;
-        }
+    }
     .contactMeCard p a{
         margin-left: 15px;
         width: 150px;
     }
 }
-  
-  /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
-.cardBody img.self{
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+    .cardBody img.self{
         display: none;
     }
     .contactMeHeader{
@@ -286,35 +287,32 @@ footer h3{
     }
     nav ul {
         margin-top: 0px;
-  }
-  }
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
-main{
+    }
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+    main{
         margin-top: 125px;
     }
-.cardName {
+    .cardName {
         flex: 0 0 0px;
-}
-h2{
-    text-align: center;
-}
-.cardBody {
-    padding: 3px;
-    justify-items: center;
-}
-
-.projects {
-    padding: 0px;
-}
-
-.projectBanner a img {
-    padding: 0px;
-}
-.projectOuterBox {
-    margin-left: 0px;
-    margin-right: 0px;
-
-  }
-
+    }
+    h2{
+        text-align: center;
+    }
+    .cardBody {
+        padding: 3px;
+        justify-items: center;
+    }
+    .projects {
+        padding: 0px;
+    }
+    .projectBanner a img {
+        padding: 0px;
+    }
+    .projectOuterBox {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
